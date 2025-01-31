@@ -23,6 +23,14 @@ p {
     padding-top: 15px ;
 }
 
+.paragrafo1{
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    padding-top: 10px;
+}
 h1 {
     padding-bottom: 10px;
 }
@@ -42,13 +50,8 @@ h2 {
     font-size: 2;
 }
 
-h3 {
-    color: brown;
-}
-
 h4{
     padding-left: 10px;
-    color:rgb(128, 33, 33);
 }
 
 #maior {
@@ -74,7 +77,7 @@ code{
     background-color: rgba(80, 80, 80, 0.123);
     width: 400px;
     font-weight: 200;
-    margin-left: 50px;
+    margin-left: 5px;
 }
 
 .primal {
