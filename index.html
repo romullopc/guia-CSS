@@ -10,7 +10,7 @@
 <body>  
     <h1>Css</h1>
     <main id="maior">
-        <article id="segunda">
+        <article class="segunda">
             <h2>Head</h2>
                 <p class="paragrafo1">A tag <code class="codigo">head</code> em HTML é onde você coloca os metadados sobre o documento HTML. Estes dados não são diretamente exibidos na página web, mas são usados para configurar, informar e melhorar a performance da página.</p>
                 <p><code>@charset "UTF-8";</code> --- é uma regra CSS que especifica a codificação de caracteres do arquivo de folha de estilo. Ele deve ser colocado na primeira linha do arquivo CSS e não pode ter nenhum caractere antes dele, incluindo comentários. Isso garante que o arquivo CSS seja interpretado corretamente pelo navegador.</p>
@@ -18,8 +18,50 @@
                 <p><code>style</code> --- (CSS local) A tag é usada para definir estilos CSS, executada dentro do cabeçalho de uma página HTML. OBS.: utilidade para apenas uma página.</p>
                 
                 
+                <p><code>style</code> --- (CSS local) A tag é usada para definir estilos CSS, executada dentro do cabeçalho de uma página HTML. OBS.: utilidade para apenas uma página.</p>          
         </article>
 
+        <h2>atributos</h2>
+        <article class="segunda">
+                <p class="paragrafo1"> Os atributos CSS são propriedades que permitem controlar o estilo e o layout de elementos em uma página web.</p>
+                <p><code>style="atributos";</code> --- forma de declarar atributos Css no formato inline, este formato de declaração é de escopo local, ou seja, aplica somente na tag onde a mesma foi declarada.</p>
+                <p><code>!important ---</code>usada para adicionar mais importância a uma propriedade/valor do que o normal, ela substituirá TODAS as regras de estilo anteriores para aquela propriedade específica naquele elemento!</p>
+                <h3>Seletores</h3>
+                    <p>São formas de idêntificar os elementos HTML no css, facilitando a formatação.</p>
+                    <br>
+                    <p><code>*{} </code> --- é um seletor universal em CSS que seleciona todos os elementos na página.</p>
+                    <p><b class="cod">Tag name</b> --- forma de identificar um elemento HTML pela <b>Tag</b>, esta forma é prioridade quando se trata de formatar um grupo de elementos que possuem a mesma <b>tag</b> HTML.</p>
+                    <p><b class="cod">#ID{}</b> --- Forma de identificara tag HTML pelo ID; esta forma é prioridade quando se trata de apenas um elemento HTML, pois é um indentificador exclusivo.</p>
+                    <p><b class="cod">.class{}</b> --- Forma de identificar elementos pela <b>classe</b>, esta forma é prioridade quando se trata de formatar um grupo de tags HTML que pertencem a mesma classe.</p>
+                    <blockquote>
+                        <p>
+                            Há diferentes formas de declarar e especificar os seletores para formatação, os exemplos anteriores são as formas mais simples. <br>
+                            para mais informações e possibilidades há de pesquisar mais!
+                        </p>
+                    </blockquote>
+                    <br>
+                <h3>Propriedade background</h3>
+                    <p class="paragrafo1">formata o plano de fundo do elemento atribuído.</p>
+                    <p class="codigo">Shorthand background: <b>color > image > repeat > position / size > attachment</b></p>
+                    <p><code>background-color:</code>  altera a cor.</p>
+                    <p><code>background-image:</code> adiciona uma imagem.</p>
+                    <p><code>background-repeat:</code> formata a repetição do background.</p>
+                    <p><code>background-position:</code> posiciona o background.</p>
+                    <p><code>background-size:</code> define o tamanho da imagem de fundo do elemento.</p>
+                    <p><code>background-clip:</code> define até onde a cor ou a imagem de fundo de um elemento deve se estender.</p>
+                    <p><code>background-attachment:</code> define se a imagem de fundo de um elemento deve rolar ou permanecer fixa em relação à área de exibição.</p>
+                    <hr>
+                <h3>Propriedade border</h3>
+                    <p class="paragrafo1">estilização da borda dos elementos HTML.</p>
+                    <p><code>border-style: </code> formata o estilo da borda do elemento.</p>
+                    <p><code>border-color: </code> define a cor da borda.</p>
+                    <br>
+                <h3>Propriedade padding</h3>
+                    <p>O atributo usado para definir o espaçamento interno de um elemento, ou seja, a área entre o conteúdo do elemento e sua borda.</p>
+                    <br>
+                <h3>Cores</h3>
+                    <p><code>color </code> --- esta propriedade define a cor do texto de um elemento. Você pode definir seu valor como um nome de cor, um valor hexadecimal ou um valor RGB.</p> 
+                    <p><code>background-color</code> --- esta propriedade define a cor de fundo de um elemento. Você pode definir seu valor como um nome de cor, um valor hexadecimal ou um valor RGB.</p>
         <article id="segunda">
             <h2>Body</h2>
                 <h3>Seletores</h3>
