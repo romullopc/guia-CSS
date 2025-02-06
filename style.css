@@ -7,12 +7,14 @@
 }
 
 body {
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     background-color: aliceblue;
 }
 
-section{background-color: rgba(250, 236, 218, 0.897);}
+section{
+    background-color: rgba(250, 236, 218, 0.897);
+}
 
 p { 
     font-family: sans-serif;
@@ -39,8 +41,8 @@ h2 {
     color: aliceblue;
     text-shadow: 1px 1px black;
     background-color: grey;
-    padding:10px;
-    margin-left: -10px;
+    background-clip: border-box;
+    padding:10px;;
     border-top: 1px solid rgba(0, 0, 0, 0.596);
 }
 
@@ -61,10 +63,11 @@ h4{
     
 }
 
-#segunda {
+.segunda {
     padding-bottom: 15px;
-    padding-left: 10px;
-    border-top: 0px;
+    padding: 5px;
+    margin: 10px;
+    border-top: none;
 }
 
 code{
@@ -81,14 +84,9 @@ code{
     color: rgb(2, 138, 2);
     text-shadow: 1px 1px 1px rgba(190, 190, 190, 0.518);
     background-color: rgba(80, 80, 80, 0.123);
-    width: 400px;
     font-weight: 200;
-    margin-left: 5px;
-}
+    padding-bottom: 10px;
 
-.primal {
-    color: rgb(68, 9, 9);
-    padding: 10px 10px ;
 }
 
 #propriedade > p {
