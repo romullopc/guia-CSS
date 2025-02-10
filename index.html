@@ -16,9 +16,6 @@
                 <p><code>@charset "UTF-8";</code> --- é uma regra CSS que especifica a codificação de caracteres do arquivo de folha de estilo. Ele deve ser colocado na primeira linha do arquivo CSS e não pode ter nenhum caractere antes dele, incluindo comentários. Isso garante que o arquivo CSS seja interpretado corretamente pelo navegador.</p>
                 <p><code>link:css </code> --- (CSS externo ) é um arquivo separado que contém regras CSS para estilizar um documento HTML. Para vincular uma folha de estilo CSS externa a um documento HTML, você pode usar o elemento <code class="codigo">link:css</code> no cabeçalho do documento HTML.  OBS.: utilidade para todas as páginas vinculadas.</p>
                 <p><code>style</code> --- (CSS local) A tag é usada para definir estilos CSS, executada dentro do cabeçalho de uma página HTML. OBS.: utilidade para apenas uma página.</p>
-                
-                
-                <p><code>style</code> --- (CSS local) A tag é usada para definir estilos CSS, executada dentro do cabeçalho de uma página HTML. OBS.: utilidade para apenas uma página.</p>          
         </article>
 
         <h2>atributos</h2>
@@ -52,10 +49,22 @@
                     <p><code>background-attachment:</code> define se a imagem de fundo de um elemento deve rolar ou permanecer fixa em relação à área de exibição.</p>
                     <hr>
                 <h3>Propriedade border</h3>
-                    <p class="paragrafo1">estilização da borda dos elementos HTML.</p>
+                    <p class="paragrafo1">estilização da borda dos elementos HTML; É possivel personalizar cada lado da borda de forma única.</p>
+                    <p class="codigo">Shorthand border-top: <b>color > style > width</b></p>
                     <p><code>border-style: </code> formata o estilo da borda do elemento.</p>
+                    <p><code>border-width: </code> formata a espessura da borda.</p>
                     <p><code>border-color: </code> define a cor da borda.</p>
-                    <br>
+                    <p><code>border-radius: </code> personaliza o arredondamento das bordas.</p>
+                    <blockquote style="padding-bottom: 10px;">
+                        <p>border-radius: <b>superior esquerdo, superior direito, baixo esquerda, baixo direita</b>.</p>
+                    </blockquote>
+                    <h4>border-image</h4>
+                    <p class="codigo">Shorthand: border-image: URL > slice > width > outset > repeat</p>
+                    <p><code>border-image: URL(); </code> adiciona uma imagem na borda.</p>
+                    <p><code>border-image-slice: </code> Especifica como a imagem será dividida em partes para se ajustar às bordas.</p>
+                    <p><code>border-image-outset: </code> Aumenta a área da borda.</p>
+                    <p><code>border-image-repeat: </code>Define como a imagem será repetida (pode ser stretch, repeat, round).</p>
+                    <hr>
                 <h3>Propriedade padding</h3>
                     <p>O atributo usado para definir o espaçamento interno de um elemento, ou seja, a área entre o conteúdo do elemento e sua borda.</p>
                     <br>
