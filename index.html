@@ -126,6 +126,40 @@
                     </blockquote>
                     <hr>
                 </div>
+            <h3>Preenchimento gradiente</h3>
+                <div id="div_gradiente">
+                    <p class="paragrafo1"> é uma transição de cores que pode ser usada para criar efeitos de degradê em sites. É possível controlar a direção, a forma, as cores e como elas transitam de uma para outra. </p>
+                    <p><code>linear-gradient:</code> degradê de cores de forma linear.</p>
+                    <p><b>exemplo:</b><code class="codigo">background: *repeating-linear-gradient(to top right, blue, red, green);</code></p>
+                        <blockquote>
+                            <p>entre parênteses informe a direção e a quantidade de cores que o degradê linear irá possuir; Caso deseja repetir informe antes a propriedade <i>repeating</i>.</p>
+                            <p>há possibilidade de definir em qual a posição onde cada cor irá iniciar informando a "%" da area definida.</p>
+                            <p></p>
+                        </blockquote>
+                    <p><code>gradiente-radial:</code> degradê de cores em forma circular.</p>
+                    <p><b>exemplo:</b><code class="codigo">background: radial-gradient(circle , blue, red, green);</code></p>
+                        <blockquote>
+                            <p>O <i>gradiente-radial</i> funciona quase da mesma forma do <i>gradiente-linear</i>, apenas omite a direção das cores.</p>
+                            <p>caso a area não seja proporcional, há possibilidade de informar um atributo exclusivo "<b>circle</b>".</p>
+                        </blockquote>
+                    <h4>gradiente no texto</h4>
+                        <p>a possibilidade de colocar gradiente no texto, porém não é de forma regulamentada pelo w3c, utilizando métodos alternativos.</p>
+                        <pre id="gradiente_texto">
+                            <code class="codigo" >
+                                h1{
+                                    background: linear-gradient(to right, blue, red);
+                                    -webkit-text-fill-color: transparent;
+                                    -webkit-background-clip: text;
+                                }
+                            </code>
+                        </pre>
+                        <blockquote id="citacao_gradient_texto">
+                            <p>primeiramente, aplica o gradiente no elemento html contida por o texto desejado.</p>
+                            <p><code>-webkit-fill-color: transparent;</code> serve para transformar o texto do elemento em transparente.</p>
+                            <p><code>-webkit-background-clip: text;</code> serve para cortar o background do elmento desejado.</p>
+                            <p>como o texto esta em transparente, ele recebe a cor de fundo aplicado, e com a 3ª propriedade do exemplo recorta o fundo, permitindo apenas o texto transparent. </p>
+                        </blockquote>
+                </div>
         </article>    
     </main>
 </body>
