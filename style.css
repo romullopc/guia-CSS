@@ -30,7 +30,7 @@ p {
 }
 
 h1, h2, h3, h4 {
-    padding-top: 10px;
+    padding: 10px;
 }
 
 h1 {
@@ -60,13 +60,13 @@ h4{
     padding: 0px;
     border: 1px solid black;
     background-color: rgba(250, 236, 218, 0.897);
-    
+
 }
 
 .segunda {
     padding-bottom: 15px;
-    padding: 5px;
-    margin: 10px;
+    padding: 0px;
+    margin: 0px;
     border-top: none;
 }
 
@@ -85,7 +85,7 @@ code{
     text-shadow: 1px 1px 1px rgba(190, 190, 190, 0.518);
     background-color: rgba(80, 80, 80, 0.123);
     font-weight: 200;
-    padding-bottom: 10px;
+    padding: 10px;
 
 }
 
@@ -106,8 +106,6 @@ blockquote{
 a {
     cursor: pointer;
     margin-bottom: 10px;
-
-
 }
 
 a:hover{
