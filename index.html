@@ -72,36 +72,56 @@
                         <p><code>border-image-repeat: </code>Define como a imagem será repetida (pode ser stretch, repeat, round).</p>
                         <hr>
                 </div>
+            <h3>Link</h3>
+                <div id="div_link">
+                    <p>Para formatar links com CSS, você pode usar as pseudo-classes para criar estilos específicos para diferentes estados do link, como:</p>              
+                    <p><code>a:link{}</code> --- usada para estilizar os <i>links</i> que ainda não foram visitados em uma página.</p>
+                    <p><code>a:visited{}</code> --- para estilizar os <i>links</i> que já foram visitados.</p>
+                    <p><code>a:active{}</code> --- para estilizar os <i>links</i> no momento que estão sendo clicados.</p>
+                    <p><code>a:hover{}</code> --- para estilizar os  <i>links</i> quando cursor do mouse percorre por cima.</p>
+                    <hr>
+                </div>
             <h3>propriedade font</h3>
                 <div id="div_font">
                     <p><code class="codigo">Shorthand <i>Font : style > variant > weight > size > family</i></code></p>
                     <p><code>@font-face {}</code> --- é uma regra CSS que permite usar fontes personalizadas em seu site. Ela especifica uma fonte personalizada para exibir texto; a fonte pode ser carregada de um servidor remoto ou de uma fonte instalada localmente no computador do usuário.</p>
                     <p><code>src e format</code> --- são descritores usados na regra @font-face. O descritor src é usado para especificar o local de onde a fonte deve ser carregada. Ele pode ser usado para especificar um URL para uma fonte remota ou para especificar o nome de uma fonte instalada localmente no computador do usuário.  O descritor format é usado para especificar o formato da fonte que está sendo carregada. Ele é usado em conjunto com o descritor src para informar ao navegador qual o formato da fonte que está sendo carregada. Isso é útil porque diferentes navegadores suportam diferentes formatos de fonte.</p>
                     <p><code>TTF e OTF </code>--- são formatos de fonte. TTF significa TrueType Font e OTF significa OpenType Font. Ambos são formatos de fonte escalonáveis, o que significa que eles podem ser redimensionados sem perder qualidade.             TTF e OTF são suportados pela maioria dos navegadores modernos e podem ser usados com a regra @font-face para carregar fontes personalizadas em seu site. Para usar uma fonte TTF ou OTF com @font-face, você deve especificar o URL da fonte usando o descritor src e especificar o formato da fonte usando o descritor format. TTF = format('truetype') OTF= format('opentype') Existem outros formatos, porém esses dois são mais compatíveis. Além dos atributos font-family e src vistos anteriormente a diretiva @font-face contém ainda outros atributos opcionais: Font-stretch,; font-style; font-weight; unicode-range;</p>
-                    <p><code>font-style</code> --- A propriedade do CSS que define se uma fonte deve ser estilizada com uma face normal, itálica ou oblíqua de sua família de fontes.</p>
-                    <p><code>font-variant </code>--- A propriedade do CSS que especifica se um texto deve ser exibido em uma fonte small-caps ou não. Em uma fonte small-caps, todas as letras minúsculas são convertidas em letras maiúsculas. No entanto, as letras maiúsculas convertidas aparecem em um tamanho de fonte menor do que as letras maiúsculas originais no texto. A propriedade font-variant tem dois valores: normal e small-caps.</p>
-                    <p><code>font-weight </code>--- A propriedade do CSS que define o peso ou a intensidade da fonte (por exemplo, negrito). Os pesos disponíveis dependem da família de fontes que está atualmente definida. A propriedade font-weight tem vários valores, incluindo normal, bold, lighter, bolder e valores numéricos de 100 a 900.</p>
-                    <p><code>font-size </code>--- esta propriedade define o tamanho da fonte do texto de um elemento. Você pode definir seu valor como um valor absoluto (por exemplo, 12px, 14pt, 1cm) ou como um valor relativo (por exemplo, 1em, 1.2rem, 120%) Obs.: melhor medida é o 1em=16px.</p>
-                    <p><code>font-family </code>--- propriedade que define a fonte do texto de um elemento. Você pode definir seu valor como o nome de uma fonte específica ou uma lista de fontes em ordem de preferência, separadas por vírgulas. Se a primeira fonte da lista não estiver disponível no dispositivo do usuário, o navegador tentará usar a próxima fonte da lista e assim por diante, última fonte será a genérica. (Shorthand) font --- A propriedade do CSS abreviada que define todas as diferentes propriedades de fonte de um elemento em uma única declaração. Ela é uma maneira de encurtar o código, especificando todas as propriedades individuais da fonte em uma única propriedade. A propriedade font é uma propriedade abreviada para:</p>
+                    
+                    <p><code>font-style</code> --- A propriedade do CSS que define se uma fonte deve ser estilizada com uma face normal, itálica ou oblíqua de sua família de fontes.</p> 
+                    <p><code>font-variant </code>--- A propriedade do CSS que especifica se um texto deve ser exibido em uma fonte small-caps ou não.</p>
+                        <blockquote id="citacao_font_variant">
+                            <p>small caps (ou versalete), são versões em caixa alta das letras minúsculas, mas com altura menor que as letras maiúsculas regulares. Elas são frequentemente usadas para criar um efeito elegante e sofisticado, como em subtítulos, cabeçalhos ou acrônimos.</p>
+                        </blockquote>
+                    <p><code>font-weight </code>--- A propriedade do CSS que define o peso ou a intensidade da fonte.</p>
+                        <blockquote id="citacao_font_weight">
+                            <p>Os pesos disponíveis dependem da família de fontes que está atualmente definida. A propriedade font-weight tem vários valores, incluindo normal, bold, lighter, bolder e valores numéricos de 100 a 900.</p>
+                        </blockquote>
+                    <p><code>font-size </code>--- esta propriedade define o tamanho da fonte do texto de um elemento. </p>
+                        <blockquote id="citacao_font_size">
+                            <p>Você pode definir seu valor como um valor absoluto (por exemplo, 12px, 14pt, 1cm) ou como um valor relativo (por exemplo, 1em, 1.2rem, 120%) Obs.: melhor medida é o 1em=16px.</p>
+                        </blockquote>
+                    <p><code>font-family </code>--- propriedade que define a fonte do texto de um elemento.</p>
+                        <blockquote id="citacao_font_family">
+                            <p> Você pode definir seu valor como o nome de uma fonte específica ou uma lista de fontes em ordem de preferência, separadas por vírgulas. Se a primeira fonte da lista não estiver disponível no dispositivo do usuário, o navegador tentará usar a próxima fonte da lista e assim por diante, última fonte será a genérica.</p>
+                        </blockquote>
                     <hr>
                 </div>
-            <h3>line</h3>
-                <div id="div_line">
-                    <p><code>Line-height </code>--- espaçamento entre linhas de um documento HTML. A medida usa pode ser tamanho da letra 1em, 16px. (dica: centralizar conteúdo dentro de um container)</p>
-                    <p><code>text-align</code> ---propriedade que define o alinhamento horizontal do texto de um elemento. Você pode definir seu valor como left, right, center ou justify.</p>
-                    <p><code>text-indent </code>--- A propriedade do CSS que define a indentação da primeira linha em um bloco de texto. Pode ser definida por valores positivos ou negativos. Se o valor for positivo, a primeira linha será recuada para a direita.</p>
-                    <hr>
-                </div>    
-            <h3>Text-decoration </h3>
-                <div id="div_text_decoration">
-                    <p>usada para adicionar uma linha de decoração ao texto usando as propriedades:.</p>
-                    <div id="propriedades_text_decoration">
-                        <P><code>line:</code> propriedade é usada para adicionar uma linha de decoração ao texto. Ex.: overline , underline e line-through</P>
-                        <p><code>color:</code> propriedade é usada para definir a cor da linha de decoração</p>
-                        <p><code>Style:</code> propriedade define o estilo da decoração do texto (como sólido, ondulado, pontilhado, tracejado, duplo). <br> Pode ser medido em ex.: auto, px ou % : https://www.w3schools.com/cssref/pr_text_text-decoration.php</p>
-                        <p><code>Thickness:</code> propriedade especifica a espessura da linha de decoração.</p>
-                    </div>
-                    <p><code>Text-transform </code>--- propriedade CSS text-transform específica como capitalizar um texto de um elemento. Pode ser usado para que o texto apareça com todas as letras maiúsculas ou todas minúsculas, ou com cada palavra em maiúscula.</p>
+            <h3>line and text</h3>
+                <div is="div_line_text">
+                    <p><code>Line-height: </code>espaçamento entre altura das linhas.</p>
+                    <p><code>text-align: </code> formata o alinhamento dos textos.</p>
+                    <p><code>text-align-last: </code>formata o alinhamento da última linha do parágrafo de um elemento.</p>
+                    <p><code>text-decoration: </code>usada para adicionar uma linha de decoração ao texto.(sublinhado)</p>
+                    <p><code>Text-transform: </code>específica como capitalizar um texto de um elemento. Pode ser usado para que o texto apareça com todas as letras maiúsculas ou todas minúsculas, ou com cada palavra em maiúscula.</p>
+                    <p><code>text-indent: </code>formatação do texto entre a margem (indentação).</p>
+                    <p><code>letter-spacing: </code>formatação do espaçamento entre as letras.</p>
+                    <p><code>word-spacing: </code>espaçamento entre as palavras.</p>
+                    <p><code>word-break: </code>utilizada para controlar como as palavras são quebradas dentro de um elemento (container), especialmente quando não cabem no espaço disponível.</p>
+                    <p><code>white-space: </code>formata o comportamento dos parágrafos em relação ao conteiner que está inserido (elemento parent).</p>
+                    <p><code>overflow: </code>trabalha com conteúdo que transborda seu container</p>
+                    <p><code>color: </code> formata a cor dos textos do documento.</p>
+                    <p><code>direction: </code> altera a direção de leitura de text (<abbr title="right to left">rtl</abbr> e <abbr title="left to right">ltr</abbr>).</p>
                     <hr>
                 </div>
             <h3>padding</h3>

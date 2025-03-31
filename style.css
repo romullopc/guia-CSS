@@ -121,3 +121,9 @@ a:hover{
 hr{
     margin: 20px 0px;
 }
+
+abbr{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
