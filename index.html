@@ -182,21 +182,48 @@
                         <hr>
                 </div>
             <h3>Shadow</h3>
-            <div id="div_shadow">
-                <p><code>text-shadow: </code> é uma propriedade que aplica sombras nos textos.</p>
-                <p><code class="codigo"> Shorthand <b>text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7)</b>;</code></p>
-                <blockquote id="citacao_text_shadow">
-                    <p>os dois primeiro valores informam o deslocamento da sombra nos eixos X, Y.</p>
-                    <p>o terceiro valor informa o raio do desfoque, que suaviza a sombra.</p>
-                    <p>o quarto valor define a cor da sombra.</p>
-                    <p>caso queira mais de uma sombra por texto, acrescente uma virgula e informe outros valores.</p>
-                </blockquote>
-                <p><code>box-shadow: </code> propriedade que define a sombra de caixa dos elementos.</p>
-                <blockquote id="citacao_box_shadow">
-                    <p>A propriedade <b>box-shadow</b> se apropria das mesmas regras e atributos da propriedade <i>text-shadow</i>, porém, há um atributo que pode ser complementado o <i>inset</i>.</p>
-                    <p>inset é o atributo que define as sombras internas da caixa dos elementos.</p>
-                </blockquote>
-            </div>
+                <div id="div_shadow">
+                    <p><code>text-shadow: </code> é uma propriedade que aplica sombras nos textos.</p>
+                    <p><code class="codigo"> Shorthand <b>text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7)</b>;</code></p>
+                    <blockquote id="citacao_text_shadow">
+                        <p>os dois primeiro valores informam o deslocamento da sombra nos eixos X, Y.</p>
+                        <p>o terceiro valor informa o raio do desfoque, que suaviza a sombra.</p>
+                        <p>o quarto valor define a cor da sombra.</p>
+                        <p>caso queira mais de uma sombra por texto, acrescente uma virgula e informe outros valores.</p>
+                    </blockquote>
+                    <p><code>box-shadow: </code> propriedade que define a sombra de caixa dos elementos.</p>
+                    <blockquote id="citacao_box_shadow">
+                        <p>A propriedade <b>box-shadow</b> se apropria das mesmas regras e atributos da propriedade <i>text-shadow</i>, porém, há um atributo que pode ser complementado o <i>inset</i>.</p>
+                        <p>inset é o atributo que define as sombras internas da caixa dos elementos.</p>
+                    </blockquote>
+                    <hr>
+                </div>
+            <h3>Transform</h3>
+                <div id="div_transform">
+                    <p>Propriedade CSS é usada para aplicar transformações a um elemento, como rotações, escalas, deslocamentos e inclinações. É uma ferramenta poderosa que permite modificar a aparência de um elemento de maneira visualmente interessante e interativa.</p>
+                    <p><code class="codigo">Shorthand: transform:translate(100px, 50px) rotate(45deg) scale(2);</code></p>
+                    <p><code>transform: translate(X, Y)</code> --- valor da propriedade transform que desoloca elemento pelo eixo X, e pelo eixo Y; a partir da posicão inicial do elemeto.</p>
+                        <blockquote id="citacao_translate">
+                            <p>valores negativos invertem o deslocamento do eixo.</p>
+                        </blockquote>
+                    <p><code>transform: rotate(deg)</code> --- valor da propriedade transform que rotaciona o elemento utilizando a unidade de mediad <dfn>deg</dfn>.</p>
+                    <p><code>transform: scale(2)</code> --- valor da propriedade transform que escala o tamanho proporcional ao tamanho original do elemento, neste caso a unidade de medida da escala é <b>2</b>.</p>
+                    <p><code>transform: skewX(15deg) or skewY(15deg)</code> --- valor da propriedade transform que inclina o elemento a partir do eixo (x ou y), utilizando unidade de medida <dfn>deg</dfn>.</p>
+                    <p><code>transform-origin: 0% 0%;</code> --- propriedade <i>transform-origin</i> define o ponto de referência do elemento para orientação da propriedade <i>transform</i>.</p>
+                        <blockquote id="citacao_transform-origin">
+                            <p>o valor da propriedade <i>transform-origin</i> é orientada pela unidade de medida <b>%</b>, respectivamente eixo X, eixo Y.</p>
+                            <details id="details_transform-origin">
+                                <summary>ponto de referência do elemento</summary>
+                                <p>0% 0% = ESQUERDA SUPERIOR</p>
+                                <p>100% 0% = DIREITA SUPERIOR</p>
+                                <p>100% 100%= DIREITA INFERIOR</p>
+                                <p>0% 100%= ESQUERDA INFERIOR</p>
+                                <p>50% 50%= MEIO DO ELEMENTO</p>
+                                <h1>estudar transform 3d!</h1>
+                            </details>  
+                        </blockquote>
+                        <hr>
+                </div>
         </article>    
     </main>
 </body>
