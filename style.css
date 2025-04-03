@@ -81,7 +81,7 @@ code{
 }
 
 .codigo {
-    display: block;
+    display: inline-block;
     color: rgb(2, 138, 2);
     text-shadow: 1px 1px 1px rgba(190, 190, 190, 0.518);
     background-color: rgba(80, 80, 80, 0.123);
@@ -132,11 +132,20 @@ dfn{
     font-weight: bold;
 }
 
+details{
+    margin: 10px;
+    background-color: rgb(255, 211, 211);
+}
 summary{
-    
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 summary:hover{
     text-shadow: 1px 1px 2px rgb(151, 32, 32);
+}
+
+.summary{
+    text-shadow: 1px 1px 1px rgba(148, 27, 27, 0.81);
+    margin: 10px 10px 0px 5px;
+    font-size: 1.2em;
 }
