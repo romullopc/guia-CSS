@@ -10,242 +10,268 @@
 <body>  
     <h1>Css</h1>
     <main id="maior">
-        <article class="segunda">
-            <h2>Head</h2>
-                <div id="div_head">
-                    <p class="paragrafo1">A tag <code class="codigo">head</code> em HTML é onde você coloca os metadados sobre o documento HTML. Estes dados não são diretamente exibidos na página web, mas são usados para configurar, informar e melhorar a performance da página.</p>
-                    <p><code>@charset "UTF-8";</code> --- é uma regra CSS que especifica a codificação de caracteres do arquivo de folha de estilo. Ele deve ser colocado na primeira linha do arquivo CSS e não pode ter nenhum caractere antes dele, incluindo comentários. Isso garante que o arquivo CSS seja interpretado corretamente pelo navegador.</p>
-                    <p><code>link:css </code> --- (CSS externo ) é um arquivo separado que contém regras CSS para estilizar um documento HTML. Para vincular uma folha de estilo CSS externa a um documento HTML, você pode usar o elemento <code class="codigo">link:css</code> no cabeçalho do documento HTML.  OBS.: utilidade para todas as páginas vinculadas.</p>
-                    <p><code>style</code> --- (CSS local) A tag é usada para definir estilos CSS, executada dentro do cabeçalho de uma página HTML. OBS.: utilidade para apenas uma página.</p>
-                </div>
-        </article>
+        <h2>Head</h2>
+            <article id="article-head" class="segunda">
+                <p class="paragrafo1">A tag <code class="codigo">head</code> em HTML é onde você coloca os metadados sobre o documento HTML. Estes dados não são diretamente exibidos na página web, mas são usados para configurar, informar e melhorar a performance da página.</p>
+                <p><code>@charset "UTF-8";</code> --- é uma regra CSS que especifica a codificação de caracteres do arquivo de folha de estilo. Ele deve ser colocado na primeira linha do arquivo CSS e não pode ter nenhum caractere antes dele, incluindo comentários. Isso garante que o arquivo CSS seja interpretado corretamente pelo navegador.</p>
+                <p><code>link:css </code> --- (CSS externo ) é um arquivo separado que contém regras CSS para estilizar um documento HTML. Para vincular uma folha de estilo CSS externa a um documento HTML, você pode usar o elemento <code class="codigo">link:css</code> no cabeçalho do documento HTML.  OBS.: utilidade para todas as páginas vinculadas.</p>
+                <p><code>style</code> --- (CSS local) A tag é usada para definir estilos CSS, executada dentro do cabeçalho de uma página HTML. OBS.: utilidade para apenas uma página.</p>
+            </article>
+        <h2>Pseudo-classe</h2>
+            <article id="article-pseudo-classes" class="segunda">
+                <p class="paragrafo1">Pseudo-classes permitem aplicar estilos a elementos com base em estados ou características específicas que não são diretamente representados no HTML, como a posição de um elemento dentro de um contêiner.</p>
+                <p><code>:nth-child()</code> --- seleciona elementos com base em sua ordem na hierarquia de seus irmãos. Por exemplo, se você tiver uma lista de itens, pode usar essa pseudo-classe para estilizar apenas determinados itens, como o primeiro, o segundo ou aqueles em posições ímpares ou pares.</p>
+                    <blockquote id="citacao_nth-child">
+                        estudar mais sobre pseudo-classes, suas aplicações, e seus valores!
+                    </blockquote>
+            </article>
         <h2>Propriedades</h2>
-        <article class="segunda">
-            <p class="paragrafo1">permitem controlar o estilo e o layout de elementos em uma página web.</p>
-            <p><code>!important ---</code>usada para adicionar mais importância a uma propriedade/valor do que o normal, ela substituirá TODAS as regras de estilo anteriores para aquela propriedade específica naquele elemento!</p>
-            <hr>
-            <h3>Seletores</h3>
-                <div id="div_seletores">
-                    <p>São formas de idêntificar os elementos HTML no css, facilitando a formatação.</p>
-                    <p><code>*{} </code> --- é um seletor universal em CSS que seleciona todos os elementos na página.</p>
-                    <p><code>style="atributos";</code> --- forma de declarar atributos Css no formato inline, este formato de declaração é de escopo local, ou seja, aplica somente na tag onde a mesma foi declarada.</p>
-                    <p><b class="cod">Tag name</b> --- forma de identificar um elemento HTML pela <b>Tag</b>, esta forma é prioridade quando se trata de formatar um grupo de elementos que possuem a mesma <b>tag</b> HTML.</p>
-                    <p><b class="cod">#ID{}</b> --- Forma de identificara tag HTML pelo ID; esta forma é prioridade quando se trata de apenas um elemento HTML, pois é um indentificador exclusivo.</p>
-                    <p><b class="cod">.class{}</b> --- Forma de identificar elementos pela <b>classe</b>, esta forma é prioridade quando se trata de formatar um grupo de tags HTML que pertencem a mesma classe.</p>
-                    <blockquote>
-                        <p>
-                            Há diferentes formas de declarar e especificar os seletores para formatação, os exemplos anteriores são as formas mais simples. <br>
-                            para mais informações e possibilidades há de pesquisar mais!
-                        </p>
-                    </blockquote>
-                    <hr>
-                </div>
-            <h3>Propriedade background</h3>
-                <div id="div_background">
-                    <p class="paragrafo1">formata o plano de fundo do elemento atribuído.</p>
-                    <p class="codigo">Shorthand <b>background: color > image > repeat > position / size > attachment</b></p>
-                    <p><code>background-color:</code>  altera a cor.</p>
-                    <p><code>background-image:</code> adiciona uma imagem.</p>
-                    <p><code>background-repeat:</code> formata a repetição do background.</p>
-                    <p><code>background-position:</code> posiciona o background.</p>
-                    <p><code>background-size:</code> define o tamanho da imagem de fundo do elemento.</p>
-                    <p><code>background-clip:</code> define até onde a cor ou a imagem de fundo de um elemento deve se estender.</p>
-                    <p><code>background-attachment:</code> define se a imagem de fundo de um elemento deve rolar ou permanecer fixa em relação à área de exibição.</p>
-                    <hr>
-                </div>
-            <h3>Propriedade border</h3>
-                <div id="div_border">
-                    <p class="paragrafo1">estilização da borda dos elementos HTML; É possivel personalizar cada lado da borda de forma única.</p>
-                    <p class="codigo">Shorthand <b>border: color > style > width</b></p>
-                    <p><code>border-style: </code> formata o estilo da borda do elemento.</p>
-                    <p><code>border-width: </code> formata a espessura da borda.</p>
-                    <p><code>border-color: </code> define a cor da borda.</p>
-                    <p><code>border-radius: </code> personaliza o arredondamento das bordas.</p>
-                    <blockquote style="padding-bottom: 10px;">
-                        <p>border-radius: <b>superior esquerdo, superior direito, baixo esquerda, baixo direita</b>.</p>
-                    </blockquote>
-                    <h4>border-image</h4>
-                        <p class="codigo">Shorthand <b>border-image: URL > slice > width > outset > repeat</b></p>
-                        <p><code>border-image: URL(); </code> adiciona uma imagem na borda.</p>
-                        <p><code>border-image-slice: </code> Especifica como a imagem será dividida em partes para se ajustar às bordas.</p>
-                        <p><code>border-image-outset: </code> Aumenta a área da borda.</p>
-                        <p><code>border-image-repeat: </code>Define como a imagem será repetida (pode ser stretch, repeat, round).</p>
-                        <hr>
-                </div>
-            <h3>Link</h3>
-                <div id="div_link">
-                    <p>Para formatar links com CSS, você pode usar as pseudo-classes para criar estilos específicos para diferentes estados do link, como:</p>              
-                    <p><code>a:link{}</code> --- usada para estilizar os <i>links</i> que ainda não foram visitados em uma página.</p>
-                    <p><code>a:visited{}</code> --- para estilizar os <i>links</i> que já foram visitados.</p>
-                    <p><code>a:active{}</code> --- para estilizar os <i>links</i> no momento que estão sendo clicados.</p>
-                    <p><code>a:hover{}</code> --- para estilizar os  <i>links</i> quando cursor do mouse percorre por cima.</p>
-                    <hr>
-                </div>
-            <h3>propriedade font</h3>
-                <div id="div_font">
-                    <p><code class="codigo">Shorthand <i>Font : style > variant > weight > size > family</i></code></p>
-                    <p><code>@font-face {}</code> --- é uma regra CSS que permite usar fontes personalizadas em seu site. Ela especifica uma fonte personalizada para exibir texto; a fonte pode ser carregada de um servidor remoto ou de uma fonte instalada localmente no computador do usuário.</p>
-                    <p><code>src e format</code> --- são descritores usados na regra @font-face. O descritor src é usado para especificar o local de onde a fonte deve ser carregada. Ele pode ser usado para especificar um URL para uma fonte remota ou para especificar o nome de uma fonte instalada localmente no computador do usuário.  O descritor format é usado para especificar o formato da fonte que está sendo carregada. Ele é usado em conjunto com o descritor src para informar ao navegador qual o formato da fonte que está sendo carregada. Isso é útil porque diferentes navegadores suportam diferentes formatos de fonte.</p>
-                    <p><code>TTF e OTF </code>--- são formatos de fonte. TTF significa TrueType Font e OTF significa OpenType Font. Ambos são formatos de fonte escalonáveis, o que significa que eles podem ser redimensionados sem perder qualidade.             TTF e OTF são suportados pela maioria dos navegadores modernos e podem ser usados com a regra @font-face para carregar fontes personalizadas em seu site. Para usar uma fonte TTF ou OTF com @font-face, você deve especificar o URL da fonte usando o descritor src e especificar o formato da fonte usando o descritor format. TTF = format('truetype') OTF= format('opentype') Existem outros formatos, porém esses dois são mais compatíveis. Além dos atributos font-family e src vistos anteriormente a diretiva @font-face contém ainda outros atributos opcionais: Font-stretch,; font-style; font-weight; unicode-range;</p>
-                    
-                    <p><code>font-style</code> --- A propriedade do CSS que define se uma fonte deve ser estilizada com uma face normal, itálica ou oblíqua de sua família de fontes.</p> 
-                    <p><code>font-variant </code>--- A propriedade do CSS que especifica se um texto deve ser exibido em uma fonte small-caps ou não.</p>
-                        <blockquote id="citacao_font_variant">
-                            <p>small caps (ou versalete), são versões em caixa alta das letras minúsculas, mas com altura menor que as letras maiúsculas regulares. Elas são frequentemente usadas para criar um efeito elegante e sofisticado, como em subtítulos, cabeçalhos ou acrônimos.</p>
-                        </blockquote>
-                    <p><code>font-weight </code>--- A propriedade do CSS que define o peso ou a intensidade da fonte.</p>
-                        <blockquote id="citacao_font_weight">
-                            <p>Os pesos disponíveis dependem da família de fontes que está atualmente definida. A propriedade font-weight tem vários valores, incluindo normal, bold, lighter, bolder e valores numéricos de 100 a 900.</p>
-                        </blockquote>
-                    <p><code>font-size </code>--- esta propriedade define o tamanho da fonte do texto de um elemento. </p>
-                        <blockquote id="citacao_font_size">
-                            <p>Você pode definir seu valor como um valor absoluto (por exemplo, 12px, 14pt, 1cm) ou como um valor relativo (por exemplo, 1em, 1.2rem, 120%) Obs.: melhor medida é o 1em=16px.</p>
-                        </blockquote>
-                    <p><code>font-family </code>--- propriedade que define a fonte do texto de um elemento.</p>
-                        <blockquote id="citacao_font_family">
-                            <p> Você pode definir seu valor como o nome de uma fonte específica ou uma lista de fontes em ordem de preferência, separadas por vírgulas. Se a primeira fonte da lista não estiver disponível no dispositivo do usuário, o navegador tentará usar a próxima fonte da lista e assim por diante, última fonte será a genérica.</p>
-                        </blockquote>
-                    <hr>
-                </div>
-            <h3>line and text</h3>
-                <div is="div_line_text">
-                    <p><code>Line-height: </code>espaçamento entre altura das linhas.</p>
-                    <p><code>text-align: </code> formata o alinhamento dos textos.</p>
-                    <p><code>text-align-last: </code>formata o alinhamento da última linha do parágrafo de um elemento.</p>
-                    <p><code>text-decoration: </code>usada para adicionar uma linha de decoração ao texto.(sublinhado)</p>
-                    <p><code>Text-transform: </code>específica como capitalizar um texto de um elemento. Pode ser usado para que o texto apareça com todas as letras maiúsculas ou todas minúsculas, ou com cada palavra em maiúscula.</p>
-                    <p><code>text-indent: </code>formatação do texto entre a margem (indentação).</p>
-                    <p><code>letter-spacing: </code>formatação do espaçamento entre as letras.</p>
-                    <p><code>word-spacing: </code>espaçamento entre as palavras.</p>
-                    <p><code>word-break: </code>utilizada para controlar como as palavras são quebradas dentro de um elemento (container), especialmente quando não cabem no espaço disponível.</p>
-                    <p><code>white-space: </code>formata o comportamento dos parágrafos em relação ao conteiner que está inserido (elemento parent).</p>
-                    <p><code>overflow: </code>trabalha com conteúdo que transborda seu container</p>
-                    <p><code>color: </code> formata a cor dos textos do documento.</p>
-                    <p><code>direction: </code> altera a direção de leitura de text (<abbr title="right to left">rtl</abbr> e <abbr title="left to right">ltr</abbr>).</p>
-                    <hr>
-                </div>
-            <h3>padding</h3>
-                <div id="div_padding">
-                    <p><code class="codigo">Shorthand <b>padding: top, right, botton, left</b></code></p>
-                    <p><code>padding: </code>O atributo usado para definir o espaçamento interno de um elemento, ou seja, a área entre o conteúdo do elemento e sua borda.</p>
-                    <blockquote id="citacao_padding">
-                        <p><b>Obs.:</b> Quando é atribuido dois valores no atributo <i>padding</i> é respectivamente os lados <b>horizontal, vertical</b></p>
-                    </blockquote>
-                    <hr>
-                </div>
-            <h3>margin</h3>
-                <div id="div_margin">
-                    <p><code class="codigo">Shorthand <b>margin: top, right, botton, left</b></code></p>
-                    <p><code>margin:</code> propriedade que define o espaçamento externo dos elementos.</p>
-                    <blockquote id="citacao_margin">
-                        <p>há possibilidade de configurar apenas uma lado da margem;<b> ex.: margin-left: 10px</b></p>
-                    </blockquote>
-                    <p><code>margin: auto;</code> forma de centralizar os elementos filhos de um <i>parent</i>.</p>
-                    <blockquote id="citacao_margin_auto">
-                        <p><b>obs.:</b> A centralização dos elementos só funcionará caso o <i>width</i> do elemento estiver definido.</p>
-                    </blockquote>
-                    <hr>
-                </div>
-            <h3>Preenchimento gradiente</h3>
-                <div id="div_gradiente">
-                    <p class="paragrafo1"> é uma transição de cores que pode ser usada para criar efeitos de degradê em sites. É possível controlar a direção, a forma, as cores e como elas transitam de uma para outra. </p>
-                    <p><code>linear-gradient:</code> degradê de cores de forma linear.</p>
-                    <p><b>exemplo:</b><code class="codigo">background: *repeating-linear-gradient(to top right, blue, red, green);</code></p>
+            <article id="article-propriedades" class="segunda">
+                <p class="paragrafo1">permitem controlar o estilo e o layout de elementos em uma página web.</p>
+                <p><code>!important ---</code>usada para adicionar mais importância a uma propriedade/valor do que o normal, ela substituirá TODAS as regras de estilo anteriores para aquela propriedade específica naquele elemento!</p>
+                <hr>
+                <h3>Seletores</h3>
+                    <div id="div_seletores">
+                        <p>São formas de idêntificar os elementos HTML no css, facilitando a formatação.</p>
+                        <p><code>*{} </code> --- é um seletor universal em CSS que seleciona todos os elementos na página.</p>
+                        <p><code>style="atributos";</code> --- forma de declarar atributos Css no formato inline, este formato de declaração é de escopo local, ou seja, aplica somente na tag onde a mesma foi declarada.</p>
+                        <p><b class="cod">Tag name</b> --- forma de identificar um elemento HTML pela <b>Tag</b>, esta forma é prioridade quando se trata de formatar um grupo de elementos que possuem a mesma <b>tag</b> HTML.</p>
+                        <p><b class="cod">#ID{}</b> --- Forma de identificara tag HTML pelo ID; esta forma é prioridade quando se trata de apenas um elemento HTML, pois é um indentificador exclusivo.</p>
+                        <p><b class="cod">.class{}</b> --- Forma de identificar elementos pela <b>classe</b>, esta forma é prioridade quando se trata de formatar um grupo de tags HTML que pertencem a mesma classe.</p>
                         <blockquote>
-                            <p>entre parênteses informe a direção e a quantidade de cores que o degradê linear irá possuir; Caso deseja repetir informe antes a propriedade <i>repeating</i>.</p>
-                            <p>há possibilidade de definir em qual a posição onde cada cor irá iniciar informando a "%" da area definida.</p>
-                            <p></p>
-                        </blockquote>
-                    <p><code>gradiente-radial:</code> degradê de cores em forma circular.</p>
-                    <p><b>exemplo:</b><code class="codigo">background: radial-gradient(circle , blue, red, green);</code></p>
-                        <blockquote>
-                            <p>O <i>gradiente-radial</i> funciona quase da mesma forma do <i>gradiente-linear</i>, apenas omite a direção das cores.</p>
-                            <p>caso a area não seja proporcional, há possibilidade de informar um atributo exclusivo "<b>circle</b>".</p>
-                        </blockquote>
-                    <h4>gradiente no texto</h4>
-                        <p>a possibilidade de colocar gradiente no texto, porém não é de forma regulamentada pelo w3c, utilizando métodos alternativos.</p>
-                        <pre id="gradiente_texto">
-                            <code class="codigo" >
-                                h1{
-                                    background: linear-gradient(to right, blue, red);
-                                    -webkit-text-fill-color: transparent;
-                                    -webkit-background-clip: text;
-                                }
-                            </code>
-                        </pre>
-                        <blockquote id="citacao_gradient_texto">
-                            <p>primeiramente, aplica o gradiente no elemento html contida por o texto desejado.</p>
-                            <p><code>-webkit-fill-color: transparent;</code> serve para transformar o texto do elemento em transparente.</p>
-                            <p><code>-webkit-background-clip: text;</code> serve para cortar o background do elmento desejado.</p>
-                            <p>como o texto esta em transparente, ele recebe a cor de fundo aplicado, e com a 3ª propriedade do exemplo recorta o fundo, permitindo apenas o texto transparent. </p>
+                            <p>
+                                Há diferentes formas de declarar e especificar os seletores para formatação, os exemplos anteriores são as formas mais simples. <br>
+                                para mais informações e possibilidades há de pesquisar mais!
+                            </p>
                         </blockquote>
                         <hr>
-                </div>
-            <h3>Shadow</h3>
-                <div id="div_shadow">
-                    <p><code>text-shadow: </code> é uma propriedade que aplica sombras nos textos.</p>
-                    <p><code class="codigo"> Shorthand <b>text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7)</b>;</code></p>
-                    <blockquote id="citacao_text_shadow">
-                        <p>os dois primeiro valores informam o deslocamento da sombra nos eixos X, Y.</p>
-                        <p>o terceiro valor informa o raio do desfoque, que suaviza a sombra.</p>
-                        <p>o quarto valor define a cor da sombra.</p>
-                        <p>caso queira mais de uma sombra por texto, acrescente uma virgula e informe outros valores.</p>
-                    </blockquote>
-                    <p><code>box-shadow: </code> propriedade que define a sombra de caixa dos elementos.</p>
-                    <blockquote id="citacao_box_shadow">
-                        <p>A propriedade <b>box-shadow</b> se apropria das mesmas regras e atributos da propriedade <i>text-shadow</i>, porém, há um atributo que pode ser complementado o <i>inset</i>.</p>
-                        <p>inset é o atributo que define as sombras internas da caixa dos elementos.</p>
-                    </blockquote>
-                    <hr>
-                </div>
-            <h3>Transform</h3>
-                <div id="div_transform">
-                    <p>Propriedade CSS é usada para aplicar transformações a um elemento, como rotações, escalas, deslocamentos e inclinações. É uma ferramenta poderosa que permite modificar a aparência de um elemento de maneira visualmente interessante e interativa.</p>
-                    <p><code class="codigo">Shorthand: transform:translate(100px, 50px) rotate(45deg) scale(2);</code></p>
-                    <p><code>transform: translate(X, Y)</code> --- valor da propriedade transform que desoloca elemento pelo eixo X, e pelo eixo Y; a partir da posicão inicial do elemeto.</p>
-                        <blockquote id="citacao_translate">
-                            <p>valores negativos invertem o deslocamento do eixo.</p>
+                    </div>
+                <h3>Propriedade background</h3>
+                    <div id="div_background">
+                        <p class="paragrafo1">formata o plano de fundo do elemento atribuído.</p>
+                        <p class="codigo">Shorthand <b>background: color > image > repeat > position / size > attachment</b></p>
+                        <p><code>background-color:</code>  altera a cor.</p>
+                        <p><code>background-image:</code> adiciona uma imagem.</p>
+                        <p><code>background-repeat:</code> formata a repetição do background.</p>
+                        <p><code>background-position:</code> posiciona o background.</p>
+                        <p><code>background-size:</code> define o tamanho da imagem de fundo do elemento.</p>
+                        <p><code>background-clip:</code> define até onde a cor ou a imagem de fundo de um elemento deve se estender.</p>
+                        <p><code>background-attachment:</code> define se a imagem de fundo de um elemento deve rolar ou permanecer fixa em relação à área de exibição.</p>
+                        <hr>
+                    </div>
+                <h3>Propriedade border</h3>
+                    <div id="div_border">
+                        <p class="paragrafo1">estilização da borda dos elementos HTML; É possivel personalizar cada lado da borda de forma única.</p>
+                        <p class="codigo">Shorthand <b>border: color > style > width</b></p>
+                        <p><code>border-style: </code> formata o estilo da borda do elemento.</p>
+                        <p><code>border-width: </code> formata a espessura da borda.</p>
+                        <p><code>border-color: </code> define a cor da borda.</p>
+                        <p><code>border-radius: </code> personaliza o arredondamento das bordas.</p>
+                        <blockquote style="padding-bottom: 10px;">
+                            <p>border-radius: <b>superior esquerdo, superior direito, baixo esquerda, baixo direita</b>.</p>
                         </blockquote>
-                    <p><code>transform: rotate(deg)</code> --- valor da propriedade transform que rotaciona o elemento utilizando a unidade de mediad <dfn>deg</dfn>.</p>
-                    <p><code>transform: scale(2)</code> --- valor da propriedade transform que escala o tamanho proporcional ao tamanho original do elemento, neste caso a unidade de medida da escala é <b>2</b>.</p>
-                    <p><code>transform: skewX(15deg) or skewY(15deg)</code> --- valor da propriedade transform que inclina o elemento a partir do eixo (x ou y), utilizando unidade de medida <dfn>deg</dfn>.</p>
-                    <p><code>transform-origin: 0% 0%;</code> --- propriedade <i>transform-origin</i> define o ponto de referência do elemento para orientação da propriedade <i>transform</i>.</p>
-                        <blockquote id="citacao_transform-origin">
-                            <p>o valor da propriedade <i>transform-origin</i> é orientada pela unidade de medida <b>%</b>, respectivamente eixo X, eixo Y.</p>
-                            <details id="details_transform-origin">
-                                <summary>ponto de referência do elemento</summary>
-                                <p>0% 0% = ESQUERDA SUPERIOR</p>
-                                <p>100% 0% = DIREITA SUPERIOR</p>
-                                <p>100% 100%= DIREITA INFERIOR</p>
-                                <p>0% 100%= ESQUERDA INFERIOR</p>
-                                <p>50% 50%= MEIO DO ELEMENTO</p>
-                                <h1>estudar transform 3d!</h1>
-                            </details>  
+                        <h4>border-image</h4>
+                            <p class="codigo">Shorthand <b>border-image: URL > slice > width > outset > repeat</b></p>
+                            <p><code>border-image: URL(); </code> adiciona uma imagem na borda.</p>
+                            <p><code>border-image-slice: </code> Especifica como a imagem será dividida em partes para se ajustar às bordas.</p>
+                            <p><code>border-image-outset: </code> Aumenta a área da borda.</p>
+                            <p><code>border-image-repeat: </code>Define como a imagem será repetida (pode ser stretch, repeat, round).</p>
+                            <hr>
+                    </div>
+                <h3>Link</h3>
+                    <div id="div_link">
+                        <p>Para formatar links com CSS, você pode usar as pseudo-classes para criar estilos específicos para diferentes estados do link, como:</p>              
+                        <p><code>a:link{}</code> --- usada para estilizar os <i>links</i> que ainda não foram visitados em uma página.</p>
+                        <p><code>a:visited{}</code> --- para estilizar os <i>links</i> que já foram visitados.</p>
+                        <p><code>a:active{}</code> --- para estilizar os <i>links</i> no momento que estão sendo clicados.</p>
+                        <p><code>a:hover{}</code> --- para estilizar os  <i>links</i> quando cursor do mouse percorre por cima.</p>
+                        <hr>
+                    </div>
+                <h3>propriedade font</h3>
+                    <div id="div_font">
+                        <p><code class="codigo">Shorthand <i>Font : style > variant > weight > size > family</i></code></p>
+                        <p><code>@font-face {}</code> --- é uma regra CSS que permite usar fontes personalizadas em seu site. Ela especifica uma fonte personalizada para exibir texto; a fonte pode ser carregada de um servidor remoto ou de uma fonte instalada localmente no computador do usuário.</p>
+                        <p><code>src e format</code> --- são descritores usados na regra @font-face. O descritor src é usado para especificar o local de onde a fonte deve ser carregada. Ele pode ser usado para especificar um URL para uma fonte remota ou para especificar o nome de uma fonte instalada localmente no computador do usuário.  O descritor format é usado para especificar o formato da fonte que está sendo carregada. Ele é usado em conjunto com o descritor src para informar ao navegador qual o formato da fonte que está sendo carregada. Isso é útil porque diferentes navegadores suportam diferentes formatos de fonte.</p>
+                        <p><code>TTF e OTF </code>--- são formatos de fonte. TTF significa TrueType Font e OTF significa OpenType Font. Ambos são formatos de fonte escalonáveis, o que significa que eles podem ser redimensionados sem perder qualidade.             TTF e OTF são suportados pela maioria dos navegadores modernos e podem ser usados com a regra @font-face para carregar fontes personalizadas em seu site. Para usar uma fonte TTF ou OTF com @font-face, você deve especificar o URL da fonte usando o descritor src e especificar o formato da fonte usando o descritor format. TTF = format('truetype') OTF= format('opentype') Existem outros formatos, porém esses dois são mais compatíveis. Além dos atributos font-family e src vistos anteriormente a diretiva @font-face contém ainda outros atributos opcionais: Font-stretch,; font-style; font-weight; unicode-range;</p>
+                        
+                        <p><code>font-style</code> --- A propriedade do CSS que define se uma fonte deve ser estilizada com uma face normal, itálica ou oblíqua de sua família de fontes.</p> 
+                        <p><code>font-variant </code>--- A propriedade do CSS que especifica se um texto deve ser exibido em uma fonte small-caps ou não.</p>
+                            <blockquote id="citacao_font_variant">
+                                <p>small caps (ou versalete), são versões em caixa alta das letras minúsculas, mas com altura menor que as letras maiúsculas regulares. Elas são frequentemente usadas para criar um efeito elegante e sofisticado, como em subtítulos, cabeçalhos ou acrônimos.</p>
+                            </blockquote>
+                        <p><code>font-weight </code>--- A propriedade do CSS que define o peso ou a intensidade da fonte.</p>
+                            <blockquote id="citacao_font_weight">
+                                <p>Os pesos disponíveis dependem da família de fontes que está atualmente definida. A propriedade font-weight tem vários valores, incluindo normal, bold, lighter, bolder e valores numéricos de 100 a 900.</p>
+                            </blockquote>
+                        <p><code>font-size </code>--- esta propriedade define o tamanho da fonte do texto de um elemento. </p>
+                            <blockquote id="citacao_font_size">
+                                <p>Você pode definir seu valor como um valor absoluto (por exemplo, 12px, 14pt, 1cm) ou como um valor relativo (por exemplo, 1em, 1.2rem, 120%) Obs.: melhor medida é o 1em=16px.</p>
+                            </blockquote>
+                        <p><code>font-family </code>--- propriedade que define a fonte do texto de um elemento.</p>
+                            <blockquote id="citacao_font_family">
+                                <p> Você pode definir seu valor como o nome de uma fonte específica ou uma lista de fontes em ordem de preferência, separadas por vírgulas. Se a primeira fonte da lista não estiver disponível no dispositivo do usuário, o navegador tentará usar a próxima fonte da lista e assim por diante, última fonte será a genérica.</p>
+                            </blockquote>
+                        <hr>
+                    </div>
+                <h3>line and text</h3>
+                    <div is="div_line_text">
+                        <p><code>Line-height: </code>espaçamento entre altura das linhas.</p>
+                        <p><code>text-align: </code> formata o alinhamento dos textos.</p>
+                        <p><code>text-align-last: </code>formata o alinhamento da última linha do parágrafo de um elemento.</p>
+                        <p><code>text-decoration: </code>usada para adicionar uma linha de decoração ao texto.(sublinhado)</p>
+                        <p><code>Text-transform: </code>específica como capitalizar um texto de um elemento. Pode ser usado para que o texto apareça com todas as letras maiúsculas ou todas minúsculas, ou com cada palavra em maiúscula.</p>
+                        <p><code>text-indent: </code>formatação do texto entre a margem (indentação).</p>
+                        <p><code>letter-spacing: </code>formatação do espaçamento entre as letras.</p>
+                        <p><code>word-spacing: </code>espaçamento entre as palavras.</p>
+                        <p><code>word-break: </code>utilizada para controlar como as palavras são quebradas dentro de um elemento (container), especialmente quando não cabem no espaço disponível.</p>
+                        <p><code>white-space: </code>formata o comportamento dos parágrafos em relação ao conteiner que está inserido (elemento parent).</p>
+                        <p><code>overflow: </code>trabalha com conteúdo que transborda seu container</p>
+                        <p><code>color: </code> formata a cor dos textos do documento.</p>
+                        <p><code>direction: </code> altera a direção de leitura de text (<abbr title="right to left">rtl</abbr> e <abbr title="left to right">ltr</abbr>).</p>
+                        <hr>
+                    </div>
+                <h3>padding</h3>
+                    <div id="div_padding">
+                        <p><code class="codigo">Shorthand <b>padding: top, right, botton, left</b></code></p>
+                        <p><code>padding: </code>O atributo usado para definir o espaçamento interno de um elemento, ou seja, a área entre o conteúdo do elemento e sua borda.</p>
+                        <blockquote id="citacao_padding">
+                            <p><b>Obs.:</b> Quando é atribuido dois valores no atributo <i>padding</i> é respectivamente os lados <b>horizontal, vertical</b></p>
                         </blockquote>
                         <hr>
-                </div>
-            <h3>Marcadores de lista</h3>
-                <div id="div_style_list">
-                    <p>Shorthand: <code class="codigo">list-style: decimal-leading-zero outside</code></p>
-                    <p><code>list-style-type</code> --- permite que você escolha o tipo de marcador exibido em listas.</p>
-                    <details id="tipos-de-marcadores">
-                        <summary >tipos de marcadores</summary>
-                        <h1 class="summary">listas ordenadas <abbr title="ordinary-list">ol</abbr></h1>
-                        <p><b>decimal:</b> Números (1, 2, 3, ...).</p>
-                        <p><b>decimal-leading-zero:</b>  Números com zero à esquerda (01, 02, 03, ...).</p>
-                        <p><b>lower-roman:</b> Números romanos minúsculos (i, ii, iii, ...).</p>
-                        <p><b>upper-roman:</b> Números romanos maiúsculos (I, II, III, ...).</p>
-                        <h1 class="summary">listas não ordenadas <abbr title="unordered-lists">ul</abbr></h1>
-                        <p><b>disc:</b> formato de disco.</p>
-                        <p><b>square:</b> formato de quadrado.</p>
-                        <p><b>circle:</b> formato de circulo.</p>
-                    </details>
-                    <p><code>list-style-image</code> --- marcador personalizado com imagem.</p>
-                    <p><code>list-style-position</code> --- definir se o marcador se posicionará dentro ou forma da <b>borda</b> do elemento.</p>
-                    <hr>
-                </div>
-            <h3>Formatação de listas</h3>
-        </article>    
+                    </div>
+                <h3>margin</h3>
+                    <div id="div_margin">
+                        <p><code class="codigo">Shorthand <b>margin: top, right, botton, left</b></code></p>
+                        <p><code>margin:</code> propriedade que define o espaçamento externo dos elementos.</p>
+                        <blockquote id="citacao_margin">
+                            <p>há possibilidade de configurar apenas uma lado da margem;<b> ex.: margin-left: 10px</b></p>
+                        </blockquote>
+                        <p><code>margin: auto;</code> forma de centralizar os elementos filhos de um <i>parent</i>.</p>
+                        <blockquote id="citacao_margin_auto">
+                            <p><b>obs.:</b> A centralização dos elementos só funcionará caso o <i>width</i> do elemento estiver definido.</p>
+                        </blockquote>
+                        <hr>
+                    </div>
+                <h3>Preenchimento gradiente</h3>
+                    <div id="div_gradiente">
+                        <p class="paragrafo1"> é uma transição de cores que pode ser usada para criar efeitos de degradê em sites. É possível controlar a direção, a forma, as cores e como elas transitam de uma para outra. </p>
+                        <p><code>linear-gradient:</code> degradê de cores de forma linear.</p>
+                        <p><b>exemplo:</b><code class="codigo">background: *repeating-linear-gradient(to top right, blue, red, green);</code></p>
+                            <blockquote>
+                                <p>entre parênteses informe a direção e a quantidade de cores que o degradê linear irá possuir; Caso deseja repetir informe antes a propriedade <i>repeating</i>.</p>
+                                <p>há possibilidade de definir em qual a posição onde cada cor irá iniciar informando a "%" da area definida.</p>
+                                <p></p>
+                            </blockquote>
+                        <p><code>gradiente-radial:</code> degradê de cores em forma circular.</p>
+                        <p><b>exemplo:</b><code class="codigo">background: radial-gradient(circle , blue, red, green);</code></p>
+                            <blockquote>
+                                <p>O <i>gradiente-radial</i> funciona quase da mesma forma do <i>gradiente-linear</i>, apenas omite a direção das cores.</p>
+                                <p>caso a area não seja proporcional, há possibilidade de informar um atributo exclusivo "<b>circle</b>".</p>
+                            </blockquote>
+                        <h4>gradiente no texto</h4>
+                            <p>a possibilidade de colocar gradiente no texto, porém não é de forma regulamentada pelo w3c, utilizando métodos alternativos.</p>
+                            <pre id="gradiente_texto">
+                                <code class="codigo" >
+                                    h1{
+                                        background: linear-gradient(to right, blue, red);
+                                        -webkit-text-fill-color: transparent;
+                                        -webkit-background-clip: text;
+                                    }
+                                </code>
+                            </pre>
+                            <blockquote id="citacao_gradient_texto">
+                                <p>primeiramente, aplica o gradiente no elemento html contida por o texto desejado.</p>
+                                <p><code>-webkit-fill-color: transparent;</code> serve para transformar o texto do elemento em transparente.</p>
+                                <p><code>-webkit-background-clip: text;</code> serve para cortar o background do elmento desejado.</p>
+                                <p>como o texto esta em transparente, ele recebe a cor de fundo aplicado, e com a 3ª propriedade do exemplo recorta o fundo, permitindo apenas o texto transparent. </p>
+                            </blockquote>
+                            <hr>
+                    </div>
+                <h3>Shadow</h3>
+                    <div id="div_shadow">
+                        <p><code>text-shadow: </code> é uma propriedade que aplica sombras nos textos.</p>
+                        <p><code class="codigo"> Shorthand <b>text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7)</b>;</code></p>
+                        <blockquote id="citacao_text_shadow">
+                            <p>os dois primeiro valores informam o deslocamento da sombra nos eixos X, Y.</p>
+                            <p>o terceiro valor informa o raio do desfoque, que suaviza a sombra.</p>
+                            <p>o quarto valor define a cor da sombra.</p>
+                            <p>caso queira mais de uma sombra por texto, acrescente uma virgula e informe outros valores.</p>
+                        </blockquote>
+                        <p><code>box-shadow: </code> propriedade que define a sombra de caixa dos elementos.</p>
+                        <blockquote id="citacao_box_shadow">
+                            <p>A propriedade <b>box-shadow</b> se apropria das mesmas regras e atributos da propriedade <i>text-shadow</i>, porém, há um atributo que pode ser complementado o <i>inset</i>.</p>
+                            <p>inset é o atributo que define as sombras internas da caixa dos elementos.</p>
+                        </blockquote>
+                        <hr>
+                    </div>
+                <h3>Transform</h3>
+                    <div id="div_transform">
+                        <p>Propriedade CSS é usada para aplicar transformações a um elemento, como rotações, escalas, deslocamentos e inclinações. É uma ferramenta poderosa que permite modificar a aparência de um elemento de maneira visualmente interessante e interativa.</p>
+                        <p><code class="codigo">Shorthand: transform:translate(100px, 50px) rotate(45deg) scale(2);</code></p>
+                        <p><code>transform: translate(X, Y)</code> --- valor da propriedade transform que desoloca elemento pelo eixo X, e pelo eixo Y; a partir da posicão inicial do elemeto.</p>
+                            <blockquote id="citacao_translate">
+                                <p>valores negativos invertem o deslocamento do eixo.</p>
+                            </blockquote>
+                        <p><code>transform: rotate(deg)</code> --- valor da propriedade transform que rotaciona o elemento utilizando a unidade de mediad <dfn>deg</dfn>.</p>
+                        <p><code>transform: scale(2)</code> --- valor da propriedade transform que escala o tamanho proporcional ao tamanho original do elemento, neste caso a unidade de medida da escala é <b>2</b>.</p>
+                        <p><code>transform: skewX(15deg) or skewY(15deg)</code> --- valor da propriedade transform que inclina o elemento a partir do eixo (x ou y), utilizando unidade de medida <dfn>deg</dfn>.</p>
+                        <p><code>transform-origin: 0% 0%;</code> --- propriedade <i>transform-origin</i> define o ponto de referência do elemento para orientação da propriedade <i>transform</i>.</p>
+                            <blockquote id="citacao_transform-origin">
+                                <p>o valor da propriedade <i>transform-origin</i> é orientada pela unidade de medida <b>%</b>, respectivamente eixo X, eixo Y.</p>
+                                <details id="details_transform-origin">
+                                    <summary>ponto de referência do elemento</summary>
+                                    <p>0% 0% = ESQUERDA SUPERIOR</p>
+                                    <p>100% 0% = DIREITA SUPERIOR</p>
+                                    <p>100% 100%= DIREITA INFERIOR</p>
+                                    <p>0% 100%= ESQUERDA INFERIOR</p>
+                                    <p>50% 50%= MEIO DO ELEMENTO</p>
+                                    <h1>estudar transform 3d!</h1>
+                                </details>  
+                            </blockquote>
+                            <hr>
+                    </div>
+                <h3>Marcadores de lista</h3>
+                    <div id="div_style_list">
+                        <p>Shorthand: <code class="codigo">list-style: decimal-leading-zero outside</code></p>
+                        <p><code>list-style-type</code> --- permite que você escolha o tipo de marcador exibido em listas.</p>
+                        <details id="tipos-de-marcadores">
+                            <summary >tipos de marcadores</summary>
+                            <h1 class="summary">listas ordenadas <abbr title="ordinary-list">ol</abbr></h1>
+                            <p><b>decimal:</b> Números (1, 2, 3, ...).</p>
+                            <p><b>decimal-leading-zero:</b>  Números com zero à esquerda (01, 02, 03, ...).</p>
+                            <p><b>lower-roman:</b> Números romanos minúsculos (i, ii, iii, ...).</p>
+                            <p><b>upper-roman:</b> Números romanos maiúsculos (I, II, III, ...).</p>
+                            <h1 class="summary">listas não ordenadas <abbr title="unordered-lists">ul</abbr></h1>
+                            <p><b>disc:</b> formato de disco.</p>
+                            <p><b>square:</b> formato de quadrado.</p>
+                            <p><b>circle:</b> formato de circulo.</p>
+                        </details>
+                        <p><code>list-style-image</code> --- marcador personalizado com imagem.</p>
+                        <p><code>list-style-position</code> --- definir se o marcador se posicionará dentro ou forma da <b>borda</b> do elemento.</p>
+                        <hr>
+                    </div>
+                <h3>Formatação de tabelas</h3>
+                    <div id="div_tabelas">
+                        <p><code>table-layout:</code> --- propriedade CSS do elemento html <i>table</i>, que define a proporção das colunas diante a tabela.</p>
+                            <blockquote id="citacao_table-layout">
+                                <p>o valor <code>fixed</code> desta propriedade concede proporções iguais a todas as colunas da tabela.</p>
+                            </blockquote>
+                        <p><code>vertical-align: </code> --- Propriedade que determina a posição vertical do texto diante a célula da tabela.</p>
+                            <blockquote id="citacao_vertical-align">
+                                <p>esta propriedade é utilizada exclusivamente para trabalhar com elementos de tabelas, caso queira apropriar tal propriedade em outros elementos, aplique o <code>display: table-cell;</code></p>
+                            </blockquote>
+                        <p><code>border-collapse: collapse;</code> --- propriedade que determina se há separação entre as bordas das celulas; o valor <code>collapse</code>, quebra tal separação.</p>
+                            <blockquote id="citacao_border-collapse">
+                                <p>Caso o valor da propriedade sejá <code>separete</code>, há disponibilidade de outra propriedade:</p>
+                                <details id="details_border-spacing">
+                                    <summary class="summary">Saiba mais</summary>
+                                    <p><code>border-spacing: x y;</code> --- Propriedade que trablha com a distância dos eixos <b>X, Y</b> entre as células</p>
+                                </details>
+                            </blockquote>
+                        <p><code>empty-cells</code> --- Propriedade que determina o comportamento de visualização das células vazias.</p>
+                        <hr>
+                    </div>
+            </article>    
     </main>
 </body>
 </html>
