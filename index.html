@@ -271,6 +271,22 @@
                         <p><code>empty-cells</code> --- Propriedade que determina o comportamento de visualização das células vazias.</p>
                         <hr>
                     </div>
+                <h3>Position</h3>
+                    <div id="div_position">
+                        <p>Propriedade CSS que controla como um elemento é posicionado dentro de uma página web.</p>
+                        <p><code>static</code> --- O elemento segue o fluxo normal da página, sem ser afetado por outras propriedades de posicionamento. É a posição padrão.</p>
+                        <p><code>fiexed</code>  --- utilizada para fixar um elemento na tela, impedindo que ele se mova quando o usuário rola a página. Ele se posiciona em relação à viewport (área visível da janela do navegador) e permanece na mesma posição, mesmo com a rolagem.</p>
+                            <blockquote id="citacao_fixed">
+                                <p>Caso um elemento sobreponha outro, a propriedade <code>z-index</code> resolve o conflito de qual elemento será visível.</p>
+                            </blockquote>
+                        <p><code>sticky</code> --- O elemento é posicionado relativamente até que o ponto de rolagem especificado seja alcançado. Após esse ponto, ele se comporta como um elemento fixed.</p>
+                        <p><code>relative</code> --- O elemento é posicionado em relação à sua posição ao container parent.</p>
+                        <p><code>absolute</code> --- O elemento é removido do fluxo normal e posicionado em relação ao seu primeiro ancestral com um valor de position diferente de static.</p>
+                            <blockquote id="atributos_position" class="blockquote">
+                                <p>Além de position, os atributos <b>top, bottom, left e right</b> são usadas para ajustar a posição de um elemento quando ele não está em static.</p>
+                            </blockquote>
+                    </div>
+
             </article>    
     </main>
 </body>
