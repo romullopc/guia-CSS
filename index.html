@@ -307,6 +307,34 @@
                         <p><code>display: inline</code> os elementos ocupam a mesma linha, e não adiciona a formatação.</p>
                         <p><code>display: block</code> os elementos não ocupam a mesma linha.</p>
                         <p><code>display: inline-block</code> os elementos ocupam a mesma linha e mantém a formatação.</p>
+                        <p><code>display: table</code>  transforma o elemento em um "container de tabela" que atua como um <i>table</i> no HTML. Isso significa que ele define o contexto para comportar outros elementos que podem ser configurados como linhas <b>(display: table-row)</b> e células <b>(display: table-cell)</b>, simulando o comportamento de uma tabela sem precisar usar diretamente uma estrutura de tabela no HTML.</p>
+                            <details id="details_table">
+                                <summary class="summary">Principais características</summary>
+                                    <p>Cria um modelo de tabela para layout, permitindo que você organize elementos de forma semelhante a uma tabela.</p>
+                                    <p>Funciona bem para layouts responsivos.</p>
+                                    <p>Usa elementos filhos com propriedades como table-row e table-cell para estruturação.</p>
+                            </details>
+                        <p><code>display: table-cell</code>  usada para estilizar elementos HTML como células de uma tabela, mesmo quando eles não estão dentro de um elemento <i>table</i>. Ao aplicar essa propriedade, o elemento passa a se comportar como uma célula de tabela (<i>td</i>), permitindo que você aproveite características como alinhamento, tamanho automático com base no conteúdo, e alinhamento de bordas com outros elementos configurados como tabelas.</p>
+                            <details id="details_table-cell">
+                                <summary class="summary">atributos da propriedade table-cell</summary>
+                                    <p><b>Comportamento similar a células de tabela:</b> O elemento se ajusta automaticamente ao tamanho do conteúdo, como uma célula em uma tabela HTML tradicional.</p>
+                                    <p><b>Alinhamento e estrutura:</b> Você pode usar propriedades como vertical-align para alinhar o conteúdo na célula.</p>
+                                    <p><b>Contexto de tabela:</b> Funciona melhor quando usado dentro de elementos com display: table ou display: table-row, simulando uma tabela.</p>
+                            </details>
+                        <p><code>display: flex</code> é uma propriedade super versátil do CSS que ajuda a criar layouts flexíveis e responsivos. Ao usar essa propriedade em um contêiner, os elementos filhos (itens flexíveis) podem ser organizados de maneira eficiente.</p>
+                            <details id="details display_flex">
+                                <summary class="summary">Principais características do display-flex</summary>
+                                <p><b>Direção:</b> Use flex-direction para definir o fluxo dos itens (row, column, row-reverse, column-reverse)</p>
+                                <h4>alinhamento:</h4>
+                                    <p><b>justify-content</b> alinha os itens horizontalmente (ex.: center, space-between, space-around).</p>
+                                    <p><b>align-items</b> alinha os itens verticalmente (ex.: center, stretch, baseline).</p>
+                                <h4>Quebra de linha:</h4>
+                                    <p><b>flex-wrap</b> controla se os itens devem quebrar para a próxima linha (ex.: nowrap, wrap).</p>
+                                <h4>Proporção</h4>
+                                    <p><b>flex-grow</b> controla o crescimento dos itens (ex.: 0, 1).</p>
+                                    <p><b>flex-shrink</b> controla a redução dos itens (ex.: 0, 1).</p>
+                                    <p><b>flex-basis</b> define o tamanho inicial dos itens (ex.: auto, 100px).</p>
+                            </details>
                     </div>
             </article>    
     </main>
